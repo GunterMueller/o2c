@@ -3,7 +3,8 @@
 #       collector, please edit the variables `defCodeForGC' and `gcLibPath'
 #       in "compiler/OMachine.Mod" accordingly.
 
-CC = gcc-mp-5 -m32
+##CC = gcc-mp-5 -m32
+CC = gcc -m32
 # where to install the binaries?
 INSTALL_DIR = /opt/o2c
 BINDIR = $(INSTALL_DIR)/bin
@@ -14,7 +15,7 @@ MANDIR = $(INSTALL_DIR)/share/man
 # you shouldn't have to change anything below
 
 # Note: These flags are only used to build the first (of three) compilers
-CFLAGS = -O2 -DDISABLE_RTC -iquote obj -iquote system
+CFLAGS = -O2 -DDISABLE_RTC -iquote obj -iquote system -fcommon
 # LDFLAGS = -lm -Wl,-s
 LDFLAGS = -lm
 

@@ -700,7 +700,9 @@ PROCEDURE Makefile* (modName, comName, o2opt : ARRAY OF CHAR; VAR err : BOOLEAN)
       FOut.String (o2opt);
       FOut.Ln
     END;
-    FOut.String ("CC = gcc-mp-5 -m32");
+    (* FOut.String ("CC = gcc-mp-5 -m32"); *)
+    (* GM : Changed name of gcc back to gcc. *)
+    FOut.String ("CC = gcc -m32");
     FOut.Ln;
     FOut.String ("CFLAGS =");
     FOut.String (cflags);
