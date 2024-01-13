@@ -920,7 +920,8 @@ PROCEDURE Init*;
 BEGIN
   redirFile := "~/.o2c.red";
   makeOberon := TRUE;
-  cc := "gcc-mp-5 -m32";
+  (* cc := "gcc-mp-5 -m32"; *)
+  cc := "gcc -m32";
   cflags := "";
   ldflags := "";  (* -lm will be set by GetLinkerFlags *)
   inclPaths := NIL;

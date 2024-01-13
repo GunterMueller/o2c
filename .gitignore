@@ -1,0 +1,10 @@
+# gitignore file for o2c compiler
+sizes
+o2c
+obj.distrib
+obj/*.o
+sym
+obj/OBrowse.c
+obj/OBrowse.h
+obj/o2b.c
+obj/o2b.h
